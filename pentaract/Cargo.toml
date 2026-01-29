@@ -8,6 +8,11 @@ strip = true
 codegen-units = 1
 
 [dependencies]
+
+openssl = { 
+version = "0.10", features = ["vendored"] 
+}
+
 # routing
 axum = { version = "0.6.20", features = ["headers", "tracing", "multipart"]}
 mime_guess = "2.0.4"
