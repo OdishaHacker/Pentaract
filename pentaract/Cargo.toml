@@ -8,10 +8,8 @@ strip = true
 codegen-units = 1
 
 [dependencies]
-
-openssl = { 
-version = "0.10", features = ["vendored"] 
-}
+# FIX: Ye line zaroori hai Docker build pass karne ke liye
+openssl = { version = "0.10", features = ["vendored"] }
 
 # routing
 axum = { version = "0.6.20", features = ["headers", "tracing", "multipart"]}
